@@ -23,7 +23,7 @@ return {
 			python = { "isort", "black" },
 			javascript = { "prettierd", "prettier", stop_after_first = true },
 			go = { "gopls" },
-			c = { "clang-format" },
+			c = { 'myfmt' },
 			rust = { "rustfmt" },
 		},
 		-- Set default options
@@ -37,6 +37,8 @@ return {
 			shfmt = {
 				prepend_args = { "-i", "2" },
 			},
+			myfmt = { command = "clang-format", args = '-style="{BasedOnStyle: LLVM, IndentWidth: 8}"' }
+
 		},
 	},
 	init = function()

@@ -1,4 +1,5 @@
 require("config.lazy")
 require("config.set")
 require("config.mappings")
-require('config.colors')
+require("config.colors")
+require("config.indent")
