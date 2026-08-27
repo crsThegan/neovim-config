@@ -37,7 +37,7 @@ return {
 			shfmt = {
 				prepend_args = { "-i", "2" },
 			},
-			myfmt = { command = "clang-format", args = '-style="{BasedOnStyle: LLVM, IndentWidth: 8}"' }
+			myfmt = { command = "clang-format", args = '-style="{BasedOnStyle: LLVM, IndentWidth: 4, TabWidth: 4, ColumnLimit: 80}"' }
 
 		},
 	},
